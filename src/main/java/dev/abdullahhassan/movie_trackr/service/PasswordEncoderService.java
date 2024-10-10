@@ -3,7 +3,6 @@ package dev.abdullahhassan.movie_trackr.service;
 import org.springframework.stereotype.Service;
 
 import java.security.MessageDigest;
-import java.util.Arrays;
 
 @Service
 public class PasswordEncoderService {
