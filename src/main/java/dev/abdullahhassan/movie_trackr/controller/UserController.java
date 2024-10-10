@@ -115,7 +115,7 @@ public class UserController {
     @GetMapping("/favourite/{userId}/search")
     public ResponseEntity<?> getFavourites(
             @PathVariable("userId") int userId,
-            @RequestParam("Query") String query
+            @RequestParam(value = "Query") String query
     ){
         try{
             List<String> favourites = favouritesService.searchFavourites(userId,query);
